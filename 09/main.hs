@@ -35,6 +35,8 @@ lowPoints input =
       isLeastNeighbour input (i, j)
   ]
 
+-- would be good to modify this to use a Data.Set
+-- however: meh.
 buildBasin :: [(Int, Int)] -> [[Int]] -> [(Int, Int)]
 buildBasin basin lake = do
   let newPoints =
